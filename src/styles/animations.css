@@ -1,0 +1,81 @@
+/*Animations*/
+
+/*animation - drawWave - mobile*/
+
+@keyframes draw-wave-mobile {
+    from {
+        opacity: 1;
+        stroke-dashoffset: 1700;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+/*animation - drawWave - desktop*/
+
+@keyframes draw-wave-desktop {
+    from {
+        opacity: 1;
+        stroke-dashoffset: 2400;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+/*animation - fade-in*/
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*Places*/
+
+/*draw-wave - page__how-to-vouchers-steps-mobile-bg*/
+
+.wave-animation-bg-mobile.animation {
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    animation: draw-wave-mobile 1s ease-in-out .25s forwards;
+}
+
+/*draw-wave - page__how-to-vouchers-steps-desktop-bg*/
+
+.wave-animation-bg-desktop.animation {
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 2400;
+    animation: draw-wave-desktop 1s ease-in-out .25s forwards;
+}
+
+/*fade-in - voucher-step-write*/
+
+.voucher-step-write.animation {
+    transform: translateY(150px);
+    animation: fade-in .5s ease-in-out .35s forwards;
+}
+
+/*fade-in - voucher-step-write-confirm*/
+
+.voucher-step-confirm.animation {
+    transform: translateY(150px);
+    animation: fade-in .5s ease-in-out .5s forwards;
+}
+
+/*fade-in - voucher-step-write-pickup*/
+
+.voucher-step-pickup.animation {
+    transform: translateY(150px);
+    animation: fade-in .5s ease-in-out .65s forwards;
+}

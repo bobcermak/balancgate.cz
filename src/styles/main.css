@@ -1,0 +1,107 @@
+@layer reset, init, typography, animations, content, components, hamburger;
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(typography);
+@import url(animations.css) layer(animations);
+@import url(layout.css) layer(content);
+@import url(components.css) layer(components);
+@import url(hamburger.css) layer(hamburger);
+
+@layer reset {
+    :root {
+        /*Colors*/
+
+        /*text*/
+
+        --text-white: #FFFFFF;
+        --text-dark: #333333;
+
+        /*bg*/
+
+        --bg-white: #FFFFFF;
+        --bg-dark: #333333;
+
+        /*others*/
+
+        --cream-light: #FAEED1;
+        --cream-accent: #DED0B6;
+
+        /*Font-sizes*/
+        
+        --heading: 2.5rem;
+        --title: 2rem;
+        --paragraph: 1rem;
+        
+        /*Settings*/
+
+        /*transitions*/
+
+        --transition: .25s ease-in-out;
+        --rotate-time: .125s;
+        --move-time: .125s;
+
+        /*border-radius*/
+
+        --border-radius: 3.25rem;
+        --border-radius-image: 52px;
+
+        /*gap*/
+
+        --gap-body: 6.25rem;
+        --gap-section: 2.5rem;
+        --margin-sides: 1.5rem;
+    }
+
+    @media screen and (min-width: 1281px) {
+        :root {
+            /*width*/
+            --width-full: 90vw;
+            --width-full: 90svw;
+            --width-semi: 80vw;
+            --width-semi: 80svw;
+            --width-small: 56vw;
+            --width-small: 56svw;
+
+            /*border-radius*/
+
+            --border-radius: 5rem;
+            --border-radius-image: 80px;
+        }
+    }
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: var(--paragraph, 1rem);
+        color: var(--text-dark);
+        background-color: var(--bg-white);
+        scroll-behavior: smooth;
+        overscroll-behavior: none;
+    }
+
+    body {
+        overscroll-behavior: none;
+    }
+}
+
+@layer init {   
+    /*presets*/
+
+    /*img / iframe - responsive*/
+
+    .img-responsive, .iframe-responsive {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*svg - responsive*/
+
+    .svg-responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

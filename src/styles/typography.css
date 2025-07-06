@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
+
+/*Texts*/
+
+/*title*/
+
+h2, .title {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: var(--title, 2rem);
+    line-height: 1.25;
+    letter-spacing: -0.01rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2::after, .title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    width: 50px;
+}
+
+/*paragraph*/
+
+p, input::placeholder, textarea::placeholder, .paragraph {
+    font-weight: 500;
+    font-size: var(--paragraph, 1rem);
+    line-height: 1.5;
+    letter-spacing: -0.005rem;
+    margin: 0;
+}
+
+/*paragraph--bold*/
+
+b, input::placeholder, textarea::placeholder, .paragraph--bold {
+    font-weight: 700;
+}
+
+/*paragraph--bold--upper-case*/
+
+strong, .paragraph--bold--upper-case {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*paragraph--extra-bold--upper-case*/
+
+.paragraph--extra-bold--upper-case {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/*heading*/
+
+h2 + p, h3, .heading {
+    font-weight: 700;
+    font-size: var(--heading, 2.5rem);
+    line-height: 1.25;
+    letter-spacing: -0.0125rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+/*long-title*/
+
+.long-title {
+    position: relative;
+}
+
+.long-title--hidden {
+    position: absolute;
+    left: -1000%;
+}
+
+@media screen and (min-width: 641px) {
+    .long-title--hidden {
+        position: static;
+    }
+}
+
+/*heading--upper-case*/
+
+.heading--upper-case {
+    text-transform: uppercase;
+}
+
+/*heading--margin-0*/
+
+.heading--margin-0 {
+    margin: 0;
+}
+
+/*Others - resets*/
+
+figure, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li:has(.button) {
+    list-style: none;
+}
+
+/*Icons - normal*/
+
+.icon {
+    display: inline-block;
+}
+
+.icon::before {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: .5rem;
+    font-size: 1em;
+}
+
+.icon--correct::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f058";
+}
+
+.icon--location::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f3c5";
+}
+
+.icon--envelope::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e0";
+}
+
+.icon--phone::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f095";
+}
+
+/*Icons - single*/
+
+.icon--hidden {
+    display: none;
+}
