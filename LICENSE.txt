@@ -1,0 +1,8 @@
+Copyright (c) 2025 BobCermak
+
+Tento software byl vytvořen na zakázku a je plně ve vlastnictví klienta.  
+Klient má neomezená práva k jeho použití, modifikaci a distribuci, včetně komerčního a produkčního využití.  
+
+Bez výslovného písemného souhlasu klienta není dovoleno tento software dále šířit, kopírovat nebo používat třetími stranami.  
+
+Autor nenese žádnou odpovědnost za případné škody vzniklé použitím tohoto software.
