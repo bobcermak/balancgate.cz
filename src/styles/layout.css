@@ -1138,7 +1138,7 @@
 
 .page__flap-socials-list {
     display: flex;
-    gap: 1rem;
+    gap: .25rem;
 }
 
 .page__flap-socials-list {
