@@ -1129,7 +1129,6 @@
 .page__copyright-href {
     text-decoration: none;
     color: var(--text-dark, #333333);
-    font-weight: 700;
     transition: color var(--transition, .25s ease-in-out);
 }
 
@@ -1142,41 +1141,31 @@
     gap: 1rem;
 }
 
-.page__flap-socials-list-item {
+.page__flap-socials-list {
     list-style: none;
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
-.page__flap-socials-list-item:hover {
-    color: var(--cream-accent, #DED0B6);
-}
-
-.page__flap-socials-list-href {
-    text-decoration: none;
-    color: var(--text-dark, #333333);
-}
-
-.page__flap-socials-list-item-icon--facebook {
+.page__flap-socials-list-item {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
     padding: .5rem;
-    fill: var(--bg-dark, #333333);
-    transition: fill var(--transition, .25s ease-in-out);
 }
 
-.page__flap-socials-list-item-icon--facebook:hover {
-    fill: var(--cream-accent, #DED0B6);
+.page__flap-socials-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--cream-accent, #DED0B6);
+    transform: translateX(-50%);
+    transition: width var(--transition, .25s ease-in-out);
 }
 
-.page__flap-socials-list-item-icon--instagram {
-    padding: .5rem;
-    padding-right: 0;
-    fill: none;
-    stroke: var(--bg-dark, #333333);
-    transition: stroke var(--transition, .25s ease-in-out);
-}
-
-.page__flap-socials-list-item-icon--instagram:hover {
-    stroke: var(--cream-accent, #DED0B6);
+.page__flap-socials-list-item:hover::after {
+    width: 80%;
 }
 
 /*section - page__up-link*/
