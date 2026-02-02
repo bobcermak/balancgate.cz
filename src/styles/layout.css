@@ -570,10 +570,13 @@
     }
 }
 
+.page__price-list-explanation {
+    margin: var(--gap-section) auto;
+    max-width: 52.5rem;
+}
+
 @media screen and (min-width: 1281px) {
     .page__price-list-explanation {
-        margin: 0 auto;
-        max-width: 52.5rem;
         text-align: center;
     }
 }
