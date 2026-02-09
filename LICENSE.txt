@@ -1,4 +1,4 @@
-Copyright (c) 2025 BobCermak
+Copyright (c) 2026 BobCermak
 
 Tento software byl vytvořen na zakázku a je plně ve vlastnictví klienta.  
 Klient má neomezená práva k jeho použití, modifikaci a distribuci, včetně komerčního a produkčního využití.  
