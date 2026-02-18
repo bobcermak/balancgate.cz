@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta name="description" content="Stránka nebyla nalezena. Omlouváme se, ale obsah, který hledáte, neexistuje. Navštivte prosím naši domovskou stránku.">
-    <meta name="keywords" content="404 chyba, stránka nenalezena">
-    <link rel="stylesheet" href="normalize.css">
-    <title>404 - Stránka Nenalezena</title>
+    <meta name="description" content="Stránka nebyla nalezena - BalancGate, masáže Jablonec nad Nisou.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/images/ui/favicon-16x16.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/images/ui/favicon-32x32.svg">
+    <link rel="apple-touch-icon" href="/images/ui/favicon-180x180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>404 - Stránka nenalezena | BalancGate</title>
 </head>
-<body class="page">
-    <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
-        <h1 style="font-size: 4.375rem; line-height: 1;">404</h1>
-        <h2 style="font-size: 2.25rem; font-weight: 600; line-height: 1.2;">Stránka nenalezena</h2>
-        <p style="font-size: 1.5rem; line-height: 1.5;">Omlouváme se, ale stránka, kterou hledáte, nebyla nalezena.</p>
-        <a href="index.html" 
-           style="font-size: 1.25rem; text-decoration: underline; text-underline-offset: 0.125rem; color: #701a75; transition: all 0.2s;"
-           onmouseover="this.style.color='black';" 
-           onmouseout="this.style.color='#701a75';">
-            Zpět na hlavní stránku
+<body>
+    <div class="error-page">
+        <a href="/" aria-label="Domů">
+            <img class="error-page__logo" src="/images/ui/logo.svg" width="191" height="59" alt="BalancGate - logo">
         </a>
-    </div>    
+        <span class="error-page__divider"></span>
+        <p class="error-page__code">404</p>
+        <h1 class="error-page__title">Stránka nenalezena</h1>
+        <p class="error-page__text">Omlouváme se, ale stránka, kterou hledáte, neexistuje nebo byla přesunuta.</p>
+        <a class="button button--gray" href="/">Zpět na hlavní stránku</a>
+    </div>
 </body>
 </html>

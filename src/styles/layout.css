@@ -1,6 +1,6 @@
 /*bg*/
 
-.page__container {
+.page {
     min-height: 100vh;
     min-height: 100svh;
     display: flex;
@@ -559,13 +559,6 @@
 @media screen and (min-width: 761px) {
     .price-list-card {
         flex-basis: 30%;
-        flex-grow: 1;
-    }
-}
-
-@media screen and (min-width: 1281px) {
-    .price-list-card {
-        flex-basis: 20%;
         flex-grow: 1;
     }
 }

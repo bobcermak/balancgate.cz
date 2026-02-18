@@ -1,39 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-gsap.registerPlugin(ScrollTrigger,ScrollSmoother,ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-//ScrollSmoother
-ScrollSmoother.create({
-  smooth: 1.25,
-  effects: true
-});
-
-//ScrollToPlugin
-document.querySelectorAll('a[href*="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const href = this.getAttribute('href');
-    if (href === '#') return;
-    e.preventDefault();
-    const url = new URL(href, window.location.origin);
-    const hash = url.hash;
-    const page = url.pathname.split('/').pop() || 'index.html';
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    if (hash && page === currentPage) {
-      const targetEl = document.querySelector(hash);
-      if (targetEl) {
-        gsap.to(window, {
-          scrollTo: hash,
-          ease: "power2.inOut"
-        });
-      }
-    } else {
-      if (hash) sessionStorage.setItem('scrollToHash', hash);
-      window.location.href = url.pathname;
-    }
-  });
-});
 window.addEventListener('load', () => {
   const hash = sessionStorage.getItem('scrollToHash') || window.location.hash;
   if (hash) {
@@ -154,14 +122,14 @@ gsap.fromTo(
 //page__massage-benefits - animation
 const isWideScreen = window.matchMedia("(min-width: 1281px)").matches;
 const elements = isWideScreen
-? [
+  ? [
     ".page__massage-benefits-header",
     ".page__massage-benefits-container-header",
     ".page__massage-benefits-container-text p",
     ".page__massage-benefits-container-list-item",
     ".page__massage-benefits-container-info"
   ]
-: [
+  : [
     ".page__massage-benefits-header",
     ".page__massage-benefits-container-text p",
     ".page__massage-benefits-container-list-item",
