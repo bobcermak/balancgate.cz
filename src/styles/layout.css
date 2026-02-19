@@ -1132,6 +1132,24 @@
     color: var(--cream-accent, #DED0B6);
 }
 
+.page__flap-socials {
+    order: -2;
+}
+
+.page__copyright-dev {
+    order: -1;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__flap-socials {
+        order: 2;
+    }
+
+    .page__copyright-dev {
+        order: 1;
+    }
+}
+
 .page__flap-socials-list {
     display: flex;
     gap: .25rem;
@@ -1180,4 +1198,25 @@
         margin-right: var(--gap-body, 6.25rem);
         margin-bottom: var(--gap-body, 6.25rem);
     }
+}
+
+/*Copyright*/
+
+.powered-by-link {
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  transition: color var(--transition, .25s ease-in-out);
+  display: inline-block;
+  color: var(--text-dark, #333333);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.powered-by-link:hover {
+  color: #3333339b;
+}
+
+.first-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
 }
