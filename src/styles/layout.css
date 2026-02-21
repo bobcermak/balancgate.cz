@@ -11,7 +11,7 @@
 /*no - scroll*/
 
 .noscroll {
-    position: fixed;
+    overflow: hidden;
     touch-action: none;
 }
 
@@ -28,7 +28,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
     width: var(--width-semi);
     margin: 0 var(--margin-sides, 1.5rem);
 }
@@ -40,14 +39,15 @@
 }
 
 .page__header-logo {
-    z-index: 2;
+    position: relative;
+    z-index: 101;
 }
 
 .page__header-logo-img {
     width: 191px;
 }
 
-.page__header-menu  {
+.page__header-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -56,7 +56,7 @@
 }
 
 @media screen and (min-width: 1281px) {
-    .page__header-menu  {
+    .page__header-menu {
         display: flex;
         align-items: center;
         justify-content: end;
@@ -114,12 +114,15 @@
     justify-self: start;
 }
 
-.page__header-menu-href-fb, .page__header-menu-href-ig {
+.page__header-menu-href-fb,
+.page__header-menu-href-ig {
     padding: 0;
 }
 
 @media screen and (min-width: 1281px) {
-    .page__header-menu-item-fb, .page__header-menu-item-ig {
+
+    .page__header-menu-item-fb,
+    .page__header-menu-item-ig {
         display: none;
     }
 }
@@ -180,23 +183,46 @@
 .page__header-welcome {
     width: var(--width-full);
     height: 80vh;
+    height: 80svh;
     background-size: cover;
     background-position: 47% 80%;
     background-repeat: no-repeat;
     background-image: url(/images/content/original/welcome-image.jpg);
-    background-image: -webkit-image-set(
-        url(/images/content/bckps/welcome-image.avif) type("image/avif"),
-        url(/images/content/bckps/welcome-image.webp) type("image/webp"),
-        url(/images/content/original/welcome-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-        url(/images/content/bckps/welcome-image.avif) type("image/avif"),
-        url(/images/content/bckps/welcome-image.webp) type("image/webp"),
-        url(/images/content/original/welcome-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(/images/content/bckps/welcome-image.avif) type("image/avif"),
+            url(/images/content/bckps/welcome-image.webp) type("image/webp"),
+            url(/images/content/original/welcome-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(/images/content/bckps/welcome-image.avif) type("image/avif"),
+            url(/images/content/bckps/welcome-image.webp) type("image/webp"),
+            url(/images/content/original/welcome-image.jpg) type("image/jpeg"));
+}
+
+.page__header-welcome--about {
+    position: relative;
+    height: 70vh;
+    height: 70svh;
+    background-image: url(/images/content/original/benefits-image.jpg);
+    background-image: -webkit-image-set(url(/images/content/bckps/benefits-image.avif) type("image/avif"),
+            url(/images/content/bckps/benefits-image.webp) type("image/webp"),
+            url(/images/content/original/benefits-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(/images/content/bckps/benefits-image.avif) type("image/avif"),
+            url(/images/content/bckps/benefits-image.webp) type("image/webp"),
+            url(/images/content/original/benefits-image.jpg) type("image/jpeg"));
+}
+
+.page__header-welcome--about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
 }
 
 .page__header-welcome-wrapper {
+    position: relative;
+    z-index: 1;
     width: var(--width-semi);
     margin: var(--gap-section, 2.5rem) var(--margin-sides, 1.5rem);
 }
@@ -212,6 +238,15 @@
         height: 72.5svh;
         background-position: 32.5% 80%;
         border-radius: var(--border-radius, 3.25rem);
+    }
+
+    .page__header-welcome--about {
+        height: 62vh;
+        height: 62svh;
+    }
+
+    .page__header-welcome--about::after {
+        content: none;
     }
 
     .page__header-welcome-wrapper {
@@ -422,16 +457,12 @@
     background-position: 60% center;
     background-repeat: no-repeat;
     background-image: url(/images/content/original/cta-bg-image.jpg);
-    background-image: -webkit-image-set(
-        url(/images/content/bckps/cta-bg-image.avif) type("image/avif"),
-        url(/images/content/bckps/cta-bg-image.webp) type("image/webp"),
-        url(/images/content/original/cta-bg-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-        url(/images/content/bckps/cta-bg-image.avif) type("image/avif"),
-        url(/images/content/bckps/cta-bg-image.webp) type("image/webp"),
-        url(/images/content/original/cta-bg-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(/images/content/bckps/cta-bg-image.avif) type("image/avif"),
+            url(/images/content/bckps/cta-bg-image.webp) type("image/webp"),
+            url(/images/content/original/cta-bg-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(/images/content/bckps/cta-bg-image.avif) type("image/avif"),
+            url(/images/content/bckps/cta-bg-image.webp) type("image/webp"),
+            url(/images/content/original/cta-bg-image.jpg) type("image/jpeg"));
 }
 
 @media screen and (min-width: 1281px) {
@@ -525,7 +556,8 @@
     }
 }
 
-.page__price-list-cards-first, .page__price-list-cards-second {
+.page__price-list-cards-first,
+.page__price-list-cards-second {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-section, 2.5rem);
@@ -597,16 +629,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(/images/content/original/gift-vouchers-mobile-image.jpg);
-    background-image: -webkit-image-set(
-        url(/images/content/bckps/gift-vouchers-mobile-image.avif) type("image/avif"),
-        url(/images/content/bckps/gift-vouchers-mobile-image.webp) type("image/webp"),
-        url(/images/content/original/gift-vouchers-mobile-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-        url(/images/content/bckps/gift-vouchers-mobile-image.avif) type("image/avif"),
-        url(/images/content/bckps/gift-vouchers-mobile-image.webp) type("image/webp"),
-        url(/images/content/original/gift-vouchers-mobile-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(/images/content/bckps/gift-vouchers-mobile-image.avif) type("image/avif"),
+            url(/images/content/bckps/gift-vouchers-mobile-image.webp) type("image/webp"),
+            url(/images/content/original/gift-vouchers-mobile-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(/images/content/bckps/gift-vouchers-mobile-image.avif) type("image/avif"),
+            url(/images/content/bckps/gift-vouchers-mobile-image.webp) type("image/webp"),
+            url(/images/content/original/gift-vouchers-mobile-image.jpg) type("image/jpeg"));
 }
 
 @media screen and (min-width: 1281px) {
@@ -618,16 +646,12 @@
         border-radius: var(--border-radius, 3.25rem);
         background-position: 10% center;
         background-image: url(/images/content/original/gift-vouchers-desktop-image.jpg);
-        background-image: -webkit-image-set(
-            url(/images/content/bckps/gift-vouchers-desktop-image.avif) type("image/avif"),
-            url(/images/content/bckps/gift-vouchers-desktop-image.webp) type("image/webp"),
-            url(/images/content/original/gift-vouchers-desktop-image.jpg) type("image/jpeg")
-        );
-        background-image: image-set(
-            url(/images/content/bckps/gift-vouchers-desktop-image.avif) type("image/avif"),
-            url(/images/content/bckps/gift-vouchers-desktop-image.webp) type("image/webp"),
-            url(/images/content/original/gift-vouchers-desktop-image.jpg) type("image/jpeg")
-        );
+        background-image: -webkit-image-set(url(/images/content/bckps/gift-vouchers-desktop-image.avif) type("image/avif"),
+                url(/images/content/bckps/gift-vouchers-desktop-image.webp) type("image/webp"),
+                url(/images/content/original/gift-vouchers-desktop-image.jpg) type("image/jpeg"));
+        background-image: image-set(url(/images/content/bckps/gift-vouchers-desktop-image.avif) type("image/avif"),
+                url(/images/content/bckps/gift-vouchers-desktop-image.webp) type("image/webp"),
+                url(/images/content/original/gift-vouchers-desktop-image.jpg) type("image/jpeg"));
     }
 
     .page__vouchers-bg-container::after {
@@ -666,7 +690,8 @@
     }
 }
 
-.page__vouchers-header, .page__vouchers-wrapper-text {
+.page__vouchers-header,
+.page__vouchers-wrapper-text {
     color: var(--text-white, #FFFFFF);
 }
 
@@ -796,7 +821,8 @@
         margin-top: var(--gap-section, 2.5rem);
     }
 
-    .page__how-to-vouchers-header-intro, .page__how-to-vouchers-header-content {
+    .page__how-to-vouchers-header-intro,
+    .page__how-to-vouchers-header-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -805,7 +831,9 @@
 }
 
 @media screen and (min-width: 1281px) {
-    .page__how-to-vouchers-header-intro, .page__how-to-vouchers-header-content {
+
+    .page__how-to-vouchers-header-intro,
+    .page__how-to-vouchers-header-content {
         display: block;
         text-align: left;
     }
@@ -977,7 +1005,9 @@
         margin: 0 auto;
     }
 
-    .page__contact-header-intro, .page__contact-header-content, .page__contact-info-address {
+    .page__contact-header-intro,
+    .page__contact-header-content,
+    .page__contact-info-address {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1203,20 +1233,235 @@
 /*Copyright*/
 
 .powered-by-link {
-  font-family: 'Orbitron', sans-serif;
-  text-decoration: none;
-  transition: color var(--transition, .25s ease-in-out);
-  display: inline-block;
-  color: var(--text-dark, #333333);
-  font-size: 1rem;
-  font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    transition: color var(--transition, .25s ease-in-out);
+    display: inline-block;
+    color: var(--text-dark, #333333);
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .powered-by-link:hover {
-  color: #3333339b;
+    color: #3333339b;
 }
 
 .first-name {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.25rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+}
+
+/*main - o-nas.html*/
+
+/*section - page__education*/
+
+.page__education {
+    margin: 0 var(--margin-sides, 1.5rem);
+    width: var(--width-semi);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__education {
+        margin: 0 auto;
+    }
+}
+
+.page__education-header-heading {
+    position: relative;
+}
+
+.page__education-header-heading-none {
+    position: absolute;
+    left: -1000%;
+}
+
+@media screen and (min-width: 581px) {
+    .page__education-header-heading-none {
+        position: static;
+    }
+}
+
+.page__education-header-text {
+    margin-top: .5rem;
+    max-width: 550px;
+}
+
+.page__education-image-container {
+    margin: 2.5rem 0;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__education-image-container {
+        margin: 0;
+        margin-top: 2.5rem;
+        flex-basis: 48%;
+        flex-grow: 1;
+    }
+}
+
+.page__education-image-container-figure {
+    height: 340px;
+}
+
+@media screen and (min-width: 761px) {
+    .page__education-image-container-figure {
+        height: 480px;
+    }
+}
+
+.page__education-image-container-figure-img {
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__education-image-container-figure-img {
+        border-radius: 52px;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .page__education-content {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+}
+
+.page__education-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.page__education-content-container-text-desktop {
+    display: none;
+}
+
+.page__education-content-container-text-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__education-content-container {
+        flex-basis: 48%;
+        flex-grow: 1;
+    }
+
+    .page__education-content-container-text-desktop {
+        display: block;
+    }
+
+    .page__education-content-container-text-mobile {
+        display: none;
+    }
+}
+
+.page__education-content-container-text-desktop strong, .page__education-content-container-text-mobile p strong {
+    text-transform: lowercase;
+}
+
+.page__education-content-container-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page__education-content-container-list-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.page__education-content-container-list-item strong {
+    text-transform: initial
+}
+
+.page__education-content-container-button {
+    width: fit-content;
+}
+
+/*section - page__skills*/
+.page__skills {
+    margin: 0 var(--margin-sides, 1.5rem);
+    width: var(--width-small);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__skills {
+        margin: 0 auto;
+    }
+}
+
+.page__skills-content {
+    margin-top: .5rem;
+}
+
+.page__skills-stats {
+    position: relative;
+    margin-top: 2.5rem;
+    padding: 2.5rem;
+}
+
+.page__skills-stats::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--bg-dark, #333333);
+    pointer-events: none;
+}
+
+.page__skills-stats-list {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+@media screen and (min-width: 401px) {
+    .page__skills-stats-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 781px) {
+    .page__skills-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page__skills-content {
+        text-align: center;
+    }
+
+    .page__skills-stats-list {
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+.page__skills-stats-list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width: fit-content;
+}
+
+.page__skills-stats-list-item-data {
+    font-size: var(--heading, 2.5rem);
+    font-weight: 700;
+}
+
+.page__skills-stats-list-item-text {
+    opacity: 90%;
+    text-align: center;
 }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             for (const element of hamelmnts) {
                 element.classList.toggle("active");
-            }  
+            }
         });
     }
 });
@@ -15,9 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateScrollLock() {
     const nav = document.querySelector('.hamburger-nav');
     const isActive = nav?.classList.contains('active');
-    document.querySelectorAll('.page__container').forEach(container => {
-        container.classList.toggle('noscroll', isActive);
-    });
+    document.body.classList.toggle('noscroll', isActive);
+    document.documentElement.classList.toggle('noscroll', isActive);
+}
+
+//close hamburger helper
+function closeHamburger() {
+    document.querySelectorAll(".hamburger-zone").forEach(el => el.classList.remove("active"));
+    document.body.classList.remove('noscroll');
+    document.documentElement.classList.remove('noscroll');
 }
 
 //remove - hamburger menu
@@ -25,11 +31,7 @@ function handleNavClick(e) {
     const link = e.target.closest('a[href^="#"]');
     const upBtn = e.target.closest('a.button--up-link[href="#header"]');
     if (!link && !upBtn) return;
-    const nav = e.currentTarget;
-    nav.classList.remove('active');
-    document.body.classList.remove('noscroll');
-    document.documentElement.classList.remove('noscroll');
-    document.querySelectorAll(".hamburger-zone").forEach(el => el.classList.remove("active"));
+    closeHamburger();
 }
 document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector('.hamburger-nav');
@@ -40,12 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     updateScrollLock();
     nav.addEventListener('click', handleNavClick);
+
+    //logo click - close hamburger
+    document.querySelectorAll('.page__header-logo').forEach(logo => {
+        logo.addEventListener('click', () => {
+            closeHamburger();
+        });
+    });
+
     document.body.addEventListener('click', (e) => {
         const upBtn = e.target.closest('a.button--up-link[href="#header"]');
         if (!upBtn) return;
-        nav.classList.remove('active');
-        document.body.classList.remove('noscroll');
-        document.documentElement.classList.remove('noscroll');
-        document.querySelectorAll(".hamburger-zone").forEach(el => el.classList.remove("active"));
+        closeHamburger();
     });
 });

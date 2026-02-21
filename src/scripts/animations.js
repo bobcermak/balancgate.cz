@@ -2,17 +2,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+//scroll to hash on page load (cross-page navigation)
 window.addEventListener('load', () => {
-  const hash = sessionStorage.getItem('scrollToHash') || window.location.hash;
+  const hash = window.location.hash;
   if (hash) {
-    sessionStorage.removeItem('scrollToHash');
-    const targetEl = document.querySelector(hash);
-    if (targetEl) {
-      window.scrollTo(0, 0);
-      gsap.to(window, {
-        scrollTo: hash,
-        ease: "power2.inOut"
-      });
+    const target = document.querySelector(hash);
+    if (target) {
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
   }
 });
@@ -22,6 +20,7 @@ const screen = gsap.matchMedia();
 function toggleExpand(buttonSelector, contentSelector) {
   const button = document.querySelector(buttonSelector);
   const content = document.querySelector(contentSelector);
+  if (!button || !content) return;
   let isOpen = false;
   let anim;
   gsap.set(content, {
@@ -45,7 +44,7 @@ function toggleExpand(buttonSelector, contentSelector) {
           pointerEvents: 'auto',
           duration: 0.6,
           marginTop: '2.5rem',
-          ease: 'power2.inOut',
+          ease: 'power2.easeInOut',
           onComplete: () => {
             content.style.height = 'auto';
           }
@@ -59,7 +58,7 @@ function toggleExpand(buttonSelector, contentSelector) {
           pointerEvents: 'none',
           marginTop: 0,
           duration: 0.6,
-          ease: 'power2.inOut'
+          ease: 'power2.easeInOut'
         });
     }
   });
@@ -109,7 +108,7 @@ gsap.fromTo(
     y: 0,
     filter: "blur(0px)",
     duration: 1,
-    ease: "power2.inOut",
+    ease: "power2.easeInOut",
     stagger: 0.15,
     scrollTrigger: {
       trigger: ".page__header-welcome",
@@ -150,7 +149,7 @@ gsap.fromTo(
     scale: 1,
     filter: "blur(0px)",
     duration: 1,
-    ease: "power2.inOut",
+    ease: "power2.easeInOut",
     stagger: 0.13,
     scrollTrigger: {
       trigger: ".page__massage-benefits",
@@ -205,7 +204,7 @@ gsap.fromTo(
     rotate: 0,
     filter: "blur(0px)",
     duration: 1,
-    ease: "power2.inOut",
+    ease: "power2.easeInOut",
     stagger: 0.12,
     scrollTrigger: {
       trigger: ".page__gallery",
@@ -214,3 +213,148 @@ gsap.fromTo(
     }
   }
 );
+
+//page__education - animation (about page)
+gsap.fromTo(
+  [
+    ".page__education-header",
+  ],
+  {
+    opacity: 0,
+    y: -40,
+    filter: "blur(8px)"
+  },
+  {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    duration: 0.9,
+    ease: "power2.easeInOut",
+    scrollTrigger: {
+      trigger: ".page__education",
+      start: "top 80%",
+      once: true
+    }
+  }
+);
+
+gsap.fromTo(
+  ".page__education-image-container",
+  {
+    opacity: 0,
+    scale: 0.92,
+    filter: "blur(6px)"
+  },
+  {
+    opacity: 1,
+    scale: 1,
+    filter: "blur(0px)",
+    duration: 1,
+    ease: "power2.easeInOut",
+    scrollTrigger: {
+      trigger: ".page__education",
+      start: "top 70%",
+      once: true
+    }
+  }
+);
+
+gsap.fromTo(
+  [
+    ".page__education-content-container-text",
+    ".page__education-content-container-list-item",
+    ".page__education-content-container-button"
+  ],
+  {
+    opacity: 0,
+    x: -40,
+    filter: "blur(6px)"
+  },
+  {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    duration: 0.8,
+    ease: "power2.easeInOut",
+    stagger: 0.12,
+    scrollTrigger: {
+      trigger: ".page__education-content-container",
+      start: "top 80%",
+      once: true
+    }
+  }
+);
+
+//page__skills - header animation (about page)
+gsap.fromTo(
+  [
+    ".page__skills-header",
+    ".page__skills-content"
+  ],
+  {
+    opacity: 0,
+    y: 50,
+    filter: "blur(8px)"
+  },
+  {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    duration: 0.9,
+    ease: "power2.easeInOut",
+    stagger: 0.15,
+    scrollTrigger: {
+      trigger: ".page__skills",
+      start: "top 80%",
+      once: true
+    }
+  }
+);
+
+//page__skills-stats - counter animation (about page)
+const statItems = document.querySelectorAll(".page__skills-stats-list-item-data");
+if (statItems.length) {
+  gsap.fromTo(
+    ".page__skills-stats-list-item",
+    {
+      opacity: 0,
+      y: 30,
+      scale: 0.9
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.7,
+      ease: "back.out(1.4)",
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: ".page__skills-stats",
+        start: "top 85%",
+        once: true
+      }
+    }
+  );
+
+  // count-up for each number
+  statItems.forEach(el => {
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || "";
+    const obj = { val: 0 };
+    ScrollTrigger.create({
+      trigger: el,
+      start: "top 90%",
+      once: true,
+      onEnter: () => {
+        gsap.to(obj, {
+          val: target,
+          duration: 1.6,
+          ease: "power1.easeInOut",
+          onUpdate: () => {
+            el.textContent = Math.round(obj.val) + suffix;
+          }
+        });
+      }
+    });
+  });
+}

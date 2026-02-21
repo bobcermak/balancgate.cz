@@ -1,5 +1,6 @@
 .hamburger-row {
-    z-index: 2;
+    position: relative;
+    z-index: 101;
 }
 
 .hamburger {
@@ -10,13 +11,13 @@
     overflow-x: hidden;
 }
 
-.hamburger-btn{
+.hamburger-btn {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
 }
-  
+
 .hamburger span {
     position: absolute;
     height: 5px;
@@ -29,13 +30,13 @@
     top: 0;
     width: 32px;
 }
-  
+
 .hamburger span:nth-child(2) {
     top: 10px;
     width: 24px;
 }
-  
-.hamburger span:nth-child(3) { 
+
+.hamburger span:nth-child(3) {
     bottom: 0;
     width: 16px;
 }
@@ -89,7 +90,7 @@
     padding: 0;
     background-color: var(--bg-white, #FFFFFF);
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 100;
 }
 
 .hamburger-nav.active {
