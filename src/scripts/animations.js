@@ -63,9 +63,6 @@ function toggleExpand(buttonSelector, contentSelector) {
     }
   });
 }
-screen.add("(max-width: 1281px)", () => {
-  toggleExpand(".button-on-click.button-on-click--gray.button-icon.button-icon--chevron-down", ".page__price-list-cards-second");
-});
 
 //page__how-to-vouchers - main - animation
 const section = document.querySelector('.page__how-to-vouchers');
@@ -96,6 +93,7 @@ if (section) {
 gsap.fromTo(
   [
     ".page__header-welcome-header",
+    ".page__header-welcome--deep-massage-content-list-item",
     ".page__header-welcome-buttons-list li"
   ],
   {
@@ -117,47 +115,48 @@ gsap.fromTo(
     }
   }
 );
-
-//page__massage-benefits - animation
-const isWideScreen = window.matchMedia("(min-width: 1281px)").matches;
-const elements = isWideScreen
-  ? [
-    ".page__massage-benefits-header",
-    ".page__massage-benefits-container-header",
-    ".page__massage-benefits-container-text p",
-    ".page__massage-benefits-container-list-item",
-    ".page__massage-benefits-container-info"
-  ]
-  : [
-    ".page__massage-benefits-header",
-    ".page__massage-benefits-container-text p",
-    ".page__massage-benefits-container-list-item",
-    ".page__massage-benefits-container-info",
-    ".page__massage-benefits-container-header"
-  ];
-gsap.fromTo(
-  elements,
-  {
-    opacity: 0,
-    x: -60,
-    scale: 0.96,
-    filter: "blur(10px)"
-  },
-  {
-    opacity: 1,
-    x: 0,
-    scale: 1,
-    filter: "blur(0px)",
-    duration: 1,
-    ease: "power2.easeInOut",
-    stagger: 0.13,
-    scrollTrigger: {
-      trigger: ".page__massage-benefits",
-      start: "top 80%",
-      once: true
+const serviceSections = document.querySelectorAll(".page__back-neck, .page__arms-foots, .page__full-60, .page__full-90, .page__massage-benefits");
+serviceSections.forEach(section => {
+  const isWideScreen = window.matchMedia("(min-width: 1281px)").matches;
+  const elements = isWideScreen
+    ? [
+      section.querySelector(".page__massage-benefits-header"),
+      section.querySelector(".page__massage-benefits-container-header"),
+      ...section.querySelectorAll(".page__massage-benefits-container-text p"),
+      ...section.querySelectorAll(".page__massage-benefits-container-list-item"),
+      section.querySelector(".page__massage-benefits-container-info")
+    ]
+    : [
+      section.querySelector(".page__massage-benefits-header"),
+      ...section.querySelectorAll(".page__massage-benefits-container-text p"),
+      ...section.querySelectorAll(".page__massage-benefits-container-list-item"),
+      section.querySelector(".page__massage-benefits-container-info"),
+      section.querySelector(".page__massage-benefits-container-header")
+    ];
+  gsap.fromTo(
+    elements.filter(Boolean),
+    {
+      opacity: 0,
+      x: -60,
+      scale: 0.96,
+      filter: "blur(10px)"
+    },
+    {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      filter: "blur(0px)",
+      duration: 0.7,
+      ease: "power2.easeInOut",
+      stagger: 0.08,
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        once: true
+      }
     }
-  }
-);
+  );
+});
 
 //page__price-list - animation
 gsap.fromTo(
@@ -237,7 +236,6 @@ gsap.fromTo(
     }
   }
 );
-
 gsap.fromTo(
   ".page__education-image-container",
   {
@@ -258,7 +256,6 @@ gsap.fromTo(
     }
   }
 );
-
 gsap.fromTo(
   [
     ".page__education-content-container-text",
