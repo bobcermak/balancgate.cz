@@ -11,6 +11,50 @@
     <link rel="icon" type="image/svg+xml" sizes="32x32" href="/balancgate.cz/images/ui/favicon-32x32.svg">
     <link rel="apple-touch-icon" href="/balancgate.cz/images/ui/favicon-180x180.png">
     <title>BalancGate | Vaše brána k životní rovnováze</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "BalancGate",
+      "image": "https://balancgate.cz/images/ui/logo.svg",
+      "@id": "https://balancgate.cz/#organization",
+      "url": "https://balancgate.cz",
+      "telephone": "+420 604 338 393",
+      "priceRange": "600 Kč - 1300 Kč",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dolní nám. 584/2",
+        "addressLocality": "Jablonec nad Nisou",
+        "postalCode": "466 01",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.723261,
+        "longitude": 15.168387
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Masérské služby",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hloubková masáž"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Havajská masáž"
+            }
+          }
+        ]
+      }
+    }
+    </script>
   <script type="module" crossorigin src="/balancgate.cz/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/balancgate.cz/assets/fontawesome-BkpLxE1V.js"></script>
   <script type="module" crossorigin src="/balancgate.cz/assets/animations-DyzGZGYq.js"></script>
@@ -19,7 +63,7 @@
   <script type="module" crossorigin src="/balancgate.cz/assets/main-BLVDwJNi.js"></script>
   <link rel="stylesheet" crossorigin href="/balancgate.cz/assets/fontawesome-D4E_ndwY.css">
   <link rel="stylesheet" crossorigin href="/balancgate.cz/assets/swiper-BHLe6tYZ.css">
-  <link rel="stylesheet" crossorigin href="/balancgate.cz/assets/main-HDnOzsBV.css">
+  <link rel="stylesheet" crossorigin href="/balancgate.cz/assets/main-B-8F3RJp.css">
 </head>
 <body class="page">
     <header class="page__header" id="header">
@@ -115,7 +159,7 @@
                             <div class="page__services-container-swiper-slide-container-content-buttons">
                                 <a class="button button--transparent-gray page__services-container-swiper-slide-container-content-buttons-button" href="hloubkova-masaz.html" aria-label="Tlačítko detailu služby">Detail služby</a>
                             </div>
-                        </div>;
+                        </div>
                     </div>
                     <!--Slide 2: Havajská masáž-->
                     <div class="page__services-container-swiper-slide page__services-container-swiper-slide--hawaii-massage swiper-slide">
@@ -132,7 +176,7 @@
                                 <p class="page__services-container-swiper-slide-container-content-header-text">Hluboce relaxační masáž s rytmickými tahy předloktím uvolňuje napětí ve svalech, pomáhá při bolestech zad a podporuje regeneraci těla i mysli.</p>
                             </header>
                             <div class="page__services-container-swiper-slide-container-content-buttons">
-                                <a class="button button--transparent-gray page__services-container-swiper-slide-container-content-buttons-button" href="#" aria-label="Tlačítko detailu služby">Detail služby</a>
+                                <a class="button button--transparent-gray page__services-container-swiper-slide-container-content-buttons-button" href="havajska-masaz.html" aria-label="Tlačítko detailu služby">Detail služby</a>
                             </div>
                         </div>
                     </div>
@@ -292,7 +336,7 @@
                             <p class="price-list-card__content-text">Hluboce relaxační masáž s rytmickými tahy předloktím uvolňuje napětí ve svalech, pomáhá při bolestech zad a podporuje regeneraci těla i mysli.</p>
                         </div>
                         <footer class="price-list-card__buttons">
-                            <a class="button button--transparent-gray" href="#" aria-label="Tlačítko detailu služby">Detail služby</a>
+                            <a class="button button--transparent-gray" href="havajska-masaz.html" aria-label="Tlačítko detailu služby">Detail služby</a>
                         </footer>
                     </article>
                     <!--Article: Masáž břicha-->
@@ -319,7 +363,7 @@
                             <p class="price-list-card__content-text">Jemná technika zaměřená na oblast břicha napomáhá trávení, uvolňuje vnitřní napětí a podporuje celkovou harmonii těla i psychiky.</p>
                         </div>
                         <footer class="price-list-card__buttons">
-                            <a class="button button--transparent-gray" href="#" aria-label="Tlačítko detailu služby">Detail služby</a>
+                            <a class="button button--gray button-icon button-icon--arrow-right" href="https://www.onlinetermin.cz/customer?ownerId=586&entityId=668&serviceId=1931" aria-label="Tlačítko rezervace" target="_blank">Rezervovat</a>
                         </footer>
                     </article>
                     <!--Article: Kineziotaping-->
@@ -346,10 +390,7 @@
                             <p class="price-list-card__content-text">Pohodlí a efektivita Kineziotapingu jsou pro nás klíčové. Každou aplikaci pásky přizpůsobíme vašim potřebám, abychom podpořili správnou funkci svalů a kloubů a zrychlili proces hojení.</p>
                         </div>
                         <footer class="price-list-card__buttons">
-                            <ul class="price-list-card__buttons-list">
-                                <li><a class="button button--transparent-gray" href="#" aria-label="Tlačítko detailu služby">Detail služby</a></li>
-                                <li><a class="button button--gray button-icon button-icon--arrow-right" href="https://www.onlinetermin.cz/customer?ownerId=586&entityId=668&serviceId=2505" aria-label="Tlačítko rezervace" target="_blank">Rezervovat</a></li>
-                            </ul>
+                            <a class="button button--gray button-icon button-icon--arrow-right" href="https://www.onlinetermin.cz/customer?ownerId=586&entityId=668&serviceId=2505" aria-label="Tlačítko rezervace" target="_blank">Rezervovat</a>
                         </footer>
                     </article>
                 </div>
