@@ -1660,3 +1660,52 @@
         margin: 0 auto;
     }
 }
+
+/*main - havajska-masaz.html*/
+
+.page__header-welcome--hawaii-massage {
+    position: relative;
+    background-position: 80% 30%;
+    height: 80vh;
+    height: 80svh;
+    background-image: url(/images/content/original/hawaii-massage-image.jpg);
+    background-image: -webkit-image-set(url(/images/content/bckps/hawaii-massage-image.avif) type("image/avif"),
+            url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
+            url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(/images/content/bckps/hawaii-massage-image.avif) type("image/avif"),
+            url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
+            url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
+            overflow: hidden;
+}
+
+@media screen and (min-width: 401px) {
+    .page__header-welcome--hawaii-massage {
+        height: 75vh;
+        height: 75svh;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .page__header-welcome--hawaii-massage {
+        height: 70vh;
+        height: 70svh;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .page__header-welcome--hawaii-massage {
+        height: 62vh;
+        height: 62svh;
+    }
+}
+
+.page__header-welcome--hawaii-massage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
