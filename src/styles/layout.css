@@ -1475,8 +1475,8 @@
 .page__header-welcome--deep-massage {
     position: relative;
     background-position: 80% 0%;
-    height: 82vh;
-    height: 82svh;
+    height: 100vh;
+    height: 100svh;
     background-image: url(/images/content/original/deep-massage-image.jpg);
     background-image: -webkit-image-set(url(/images/content/bckps/deep-massage-image.avif) type("image/avif"),
         url(/images/content/bckps/deep-massage-image.webp) type("image/webp"),
@@ -1673,8 +1673,8 @@
 .page__header-welcome--hawaii-massage {
     position: relative;
     background-position: 80% 30%;
-    height: 82vh;
-    height: 82svh;
+    height: 100vh;
+    height: 100svh;
     background-image: url(/images/content/original/hawaii-massage-image.jpg);
     background-image: -webkit-image-set(url(/images/content/bckps/hawaii-massage-image.avif) type("image/avif"),
         url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
