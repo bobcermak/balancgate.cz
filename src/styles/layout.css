@@ -337,6 +337,14 @@
 .page__massage-benefits-container-header {
     grid-row: 3;
     z-index: 1;
+    position: absolute;
+    left: -1000%;
+}
+
+@media screen and (min-width: 1281px) {
+    .page__massage-benefits-container-header {
+        position: static;
+    }
 }
 
 @media screen and (min-width: 1281px) {
@@ -1005,18 +1013,19 @@
     }
 }
 
-.page__contact-info-address-text::first-letter {
-    text-transform: uppercase;
-}
-
 .page__contact-info-address-href {
     font-style: normal;
     color: var(--text-dark, #333333);
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.page__contact-info-address-href:hover {
+    color: #3333339b;
 }
 
 .page__contact-info-address-strong {
     font-style: normal;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 /*section - page__footer*/
@@ -1091,6 +1100,11 @@
 .page__footer-contact-info-list-href {
     text-decoration: none;
     color: var(--text-dark, #333333);
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.page__footer-contact-info-list-href:hover {
+    color: #3333339b;
 }
 
 .page__footer-contact-address {
@@ -1461,23 +1475,16 @@
 .page__header-welcome--deep-massage {
     position: relative;
     background-position: 80% 0%;
-    height: 80vh;
-    height: 80svh;
+    height: 82vh;
+    height: 82svh;
     background-image: url(/images/content/original/deep-massage-image.jpg);
     background-image: -webkit-image-set(url(/images/content/bckps/deep-massage-image.avif) type("image/avif"),
-            url(/images/content/bckps/deep-massage-image.webp) type("image/webp"),
-            url(/images/content/original/deep-massage-image.jpg) type("image/jpeg"));
+        url(/images/content/bckps/deep-massage-image.webp) type("image/webp"),
+        url(/images/content/original/deep-massage-image.jpg) type("image/jpeg"));
     background-image: image-set(url(/images/content/bckps/deep-massage-image.avif) type("image/avif"),
-            url(/images/content/bckps/deep-massage-image.webp) type("image/webp"),
-            url(/images/content/original/deep-massage-image.jpg) type("image/jpeg"));
-            overflow: hidden;
-}
-
-@media screen and (min-width: 401px) {
-    .page__header-welcome--deep-massage {
-        height: 75vh;
-        height: 75svh;
-    }
+        url(/images/content/bckps/deep-massage-image.webp) type("image/webp"),
+        url(/images/content/original/deep-massage-image.jpg) type("image/jpeg"));
+    overflow: hidden;
 }
 
 @media screen and (min-width: 641px) {
@@ -1501,7 +1508,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     pointer-events: none;
 }
 
@@ -1666,23 +1673,16 @@
 .page__header-welcome--hawaii-massage {
     position: relative;
     background-position: 80% 30%;
-    height: 80vh;
-    height: 80svh;
+    height: 82vh;
+    height: 82svh;
     background-image: url(/images/content/original/hawaii-massage-image.jpg);
     background-image: -webkit-image-set(url(/images/content/bckps/hawaii-massage-image.avif) type("image/avif"),
-            url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
-            url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
+        url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
+        url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
     background-image: image-set(url(/images/content/bckps/hawaii-massage-image.avif) type("image/avif"),
-            url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
-            url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
-            overflow: hidden;
-}
-
-@media screen and (min-width: 401px) {
-    .page__header-welcome--hawaii-massage {
-        height: 75vh;
-        height: 75svh;
-    }
+        url(/images/content/bckps/hawaii-massage-image.webp) type("image/webp"),
+        url(/images/content/original/hawaii-massage-image.jpg) type("image/jpeg"));
+    overflow: hidden;
 }
 
 @media screen and (min-width: 641px) {
@@ -1706,6 +1706,17 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     pointer-events: none;
+}
+
+.page__header-welcome--deep-massage-content-list-item-link {
+    text-decoration: none;
+    color: var(--text-white, #FFFFFF);
+    font-weight: 700;
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.page__header-welcome--deep-massage-content-list-item-link:hover {
+    color: #ffffff9b;
 }
