@@ -1,0 +1,59 @@
+# BalancGate
+
+> Masážní studio v Jablonci nad Nisou. Nabízí hloubkovou masáž, havajskou masáž Lomi Lomi, masáž břicha, kineziotaping a dárkové poukazy. Provozuje je Kristýna Čermáková, certifikovaná masérka s dlouholetou praxí. Slogan studia zní „Vaše brána k životní rovnováze“.
+
+Web je v češtině, statický, bez analytiky a bez uživatelských účtů. Rezervace probíhají v externím systému OnlineTermin.cz.
+
+## Základní údaje
+
+- **Provozovatel:** Kristýna Čermáková, fyzická osoba podnikající dle živnostenského zákona
+- **IČO:** 21012504 (zapsáno v živnostenském rejstříku od 11. 12. 2023, neplátce DPH)
+- **Sídlo:** Pod Skalkou 199, Liberec XXX-Vratislavice nad Nisou, 463 11 Liberec
+- **Provozovna:** Dolní nám. 584/2, 466 01 Jablonec nad Nisou 1 (GPS 50.723261, 15.168387)
+- **Telefon:** +420 604 338 393
+- **E-mail:** balancgate@gmail.com
+- **Rezervace:** https://www.onlinetermin.cz/customer?ownerId=586&orderBy=SERVICE
+- **Facebook:** https://www.facebook.com/kristyna.cermakova.505
+- **Instagram:** https://www.instagram.com/balancgate.massage/
+- **Oblast působení:** Jablonec nad Nisou, Liberec, Liberecký kraj
+
+## Ceník
+
+| Služba | Varianta | Cena | Délka |
+| --- | --- | --- | --- |
+| Hloubková masáž | Záda a krk | 600 Kč | 40 min |
+| Hloubková masáž | Horní / dolní končetiny | 600 Kč | 40 min |
+| Hloubková masáž | Celková | 1000 Kč | 60 min |
+| Hloubková masáž | Celková | 1300 Kč | 90 min |
+| Havajská masáž Lomi Lomi | Záda a krk | 600 Kč | 40 min |
+| Havajská masáž Lomi Lomi | Nohy | 600 Kč | 40 min |
+| Masáž břicha | — | 300 Kč | 20 min |
+| Kineziotaping | — | 150 Kč | 10 min |
+| Dárkový poukaz | 1000 / 1500 / 2000 Kč nebo na míru | dle hodnoty | platnost 12 měsíců |
+
+Ceny jsou konečné, provozovatel není plátcem DPH. Platí se po masáži na provozovně v hotovosti nebo přes QR kód; platební karty se nepřijímají. Rezervovat je vhodné alespoň 24 hodin předem, akutní případy telefonicky. Termín lze kdykoli zdarma zrušit nebo přesunout, storno poplatky se neúčtují.
+
+## Stránky
+
+- [Domů](https://balancgate.cz/): Přehled studia, výhody masážní terapie, nabídka služeb, kompletní ceník, dárkové poukazy a kontaktní formulář.
+- [O nás](https://balancgate.cz/o-nas.html): Vzdělání, praxe a přístup ke klientům; statistiky studia (5+ let zkušeností, 50+ spokojených zákazníků, 12+ masážních technik, 4+ typy masáží).
+- [Hloubková masáž](https://balancgate.cz/hloubkova-masaz.html): Detail služby - záda a krk, horní a dolní končetiny, celková masáž 60 a 90 minut, včetně cen a rezervačních odkazů.
+- [Havajská masáž](https://balancgate.cz/havajska-masaz.html): Detail služby Lomi Lomi - záda a krk, nohy, včetně cen a rezervačních odkazů.
+
+## Právní informace
+
+- [Obchodní podmínky](https://balancgate.cz/obchodni-podminky.html): Rezervace a zrušení termínu, ceny a platba, průběh masáže a kontraindikace, dárkové poukazy, odstoupení od smlouvy, reklamace a řešení sporů.
+- [Zásady ochrany osobních údajů](https://balancgate.cz/zasady-ochrany-osobnich-udaju.html): Jaké údaje se zpracovávají, právní základy, příjemci, doby uchování a práva podle GDPR.
+- [Cookies](https://balancgate.cz/cookies.html): Web nepoužívá žádné vlastní cookies ani analytiku; přehled obsahu třetích stran (mapa, písma, formulář).
+
+## Doplňující
+
+- [Kompletní obsah webu v Markdownu](https://balancgate.cz/llms-full.txt): Všechny texty ze všech stránek v jednom souboru.
+- [Sitemap](https://balancgate.cz/sitemap.xml): Strojově čitelný seznam všech URL.
+
+## Poznámky pro strojové zpracování
+
+- Masáže poskytované studiem nejsou zdravotní službou a nenahrazují lékařskou péči, diagnostiku ani léčbu.
+- Před masáží je klient povinen informovat o svém zdravotním stavu; masáž nelze provést například při horečce, akutním zánětu, infekčním onemocnění, čerstvém poranění, trombóze nebo pod vlivem návykových látek. Těhotenství vyžaduje předchozí konzultaci.
+- Otevírací doba není na webu zveřejněna - dostupné termíny ukazuje rezervační systém.
+- Web neuvádí žádné zákaznické recenze ani hodnocení.

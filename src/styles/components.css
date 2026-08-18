@@ -668,3 +668,44 @@ input::placeholder, textarea::placeholder {
         font-size: 2rem;
     }
 }
+
+/*Error page - legal (404 has no full footer, keep the mandatory details reachable)*/
+
+.error-page__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -.5rem;
+}
+
+.error-page__legal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem 1.5rem;
+    list-style: none;
+}
+
+.error-page__legal-list-item-href {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .875rem;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+    color: var(--text-dark, #333333);
+    opacity: .6;
+    transition: opacity var(--transition, .25s ease-in-out);
+}
+
+.error-page__legal-list-item-href:hover {
+    opacity: 1;
+}
+
+.error-page__legal-identity {
+    font-style: normal;
+    font-size: .8125rem;
+    line-height: 1.5;
+    text-align: center;
+    opacity: .55;
+}

@@ -1720,3 +1720,309 @@
 .page__header-welcome--deep-massage-content-list-item-link:hover {
     color: #ffffff9b;
 }
+
+/*main - legal pages (zasady-ochrany-osobnich-udaju.html, cookies.html, obchodni-podminky.html)*/
+
+.page__legal-intro {
+    width: var(--width-semi);
+    margin: 0 var(--margin-sides, 1.5rem);
+    padding-bottom: var(--gap-section, 2.5rem);
+    border-bottom: 1px solid var(--bg-dark, #333333);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__legal-intro {
+        margin: 0 auto;
+    }
+}
+
+.page__legal-intro-wrapper {
+    max-width: 46rem;
+}
+
+.page__legal-intro-eyebrow {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    color: #333333b3;
+}
+
+.page__legal-intro-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: var(--heading, 2.5rem);
+    line-height: 1.25;
+    letter-spacing: -0.0125rem;
+    text-transform: uppercase;
+    margin: .75rem 0 1rem;
+}
+
+.page__legal-intro-text {
+    max-width: 40rem;
+}
+
+.page__legal-intro-meta {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: #333333b3;
+}
+
+/*section - page__legal*/
+
+.page__legal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-section, 2.5rem);
+    width: var(--width-semi);
+    margin: 0 var(--margin-sides, 1.5rem);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__legal {
+        display: grid;
+        grid-template-columns: 17.5rem minmax(0, 46rem);
+        column-gap: 4rem;
+        align-items: start;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.page__legal-toc {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--cream-light, #FAEED1);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__legal-toc {
+        position: sticky;
+        top: 2rem;
+    }
+}
+
+.page__legal-toc-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+}
+
+.page__legal-toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.page__legal-toc-list-item-href {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-dark, #333333);
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.page__legal-toc-list-item-href:hover {
+    color: #3333339b;
+}
+
+.page__legal-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-section, 2.5rem);
+    max-width: 46rem;
+}
+
+/*legal-block*/
+
+/*let blocks shrink below the min-width of the tables they contain, so the tables scroll instead of the page*/
+
+.page__legal-content,
+.legal-block {
+    min-width: 0;
+}
+
+.legal-block h2 {
+    font-size: var(--title, 2rem);
+    padding-bottom: .75rem;
+}
+
+.legal-block h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.005rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.legal-block h2 + p,
+.legal-block p,
+.legal-block li,
+.legal-block td,
+.legal-block th {
+    font-weight: 500;
+    font-size: var(--paragraph, 1rem);
+    line-height: 1.6;
+    letter-spacing: -0.005rem;
+    text-transform: none;
+    margin: 0;
+}
+
+.legal-block h2 + p {
+    margin-top: 1.5rem;
+}
+
+.legal-block p + p {
+    margin-top: 1rem;
+}
+
+.legal-block-list + p,
+.legal-block-table-wrapper + p {
+    margin-top: 1.5rem;
+}
+
+.legal-block-list {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 1rem;
+    padding-left: 1.25rem;
+}
+
+.legal-block-list li {
+    list-style: disc;
+}
+
+.legal-block-list--numbered li {
+    list-style: decimal;
+}
+
+.legal-block-href {
+    color: var(--text-dark, #333333);
+    text-decoration: underline;
+    text-decoration-color: var(--cream-accent, #DED0B6);
+    text-decoration-thickness: 2px;
+    text-underline-offset: .25rem;
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.legal-block-href:hover {
+    color: #3333339b;
+}
+
+/*legal-table*/
+
+.legal-block-table-wrapper {
+    display: block;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+}
+
+.legal-table {
+    width: 100%;
+    min-width: 32rem;
+    border-collapse: collapse;
+}
+
+.legal-table caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(50%);
+}
+
+.legal-table th,
+.legal-table td {
+    padding: .75rem 1rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #33333333;
+}
+
+.legal-table th {
+    font-weight: 700;
+    background-color: var(--cream-light, #FAEED1);
+}
+
+.legal-table tbody th {
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+/*section - page__footer-legal*/
+
+.page__footer-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: var(--gap-section, 2.5rem);
+    margin-bottom: var(--gap-section, 2.5rem);
+    border-bottom: 1px solid var(--bg-dark, #333333);
+}
+
+@media screen and (min-width: 1281px) {
+    .page__footer-legal {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
+    }
+}
+
+.page__footer-legal-identity {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    font-style: normal;
+}
+
+.page__footer-legal-identity-text {
+    color: #333333b3;
+}
+
+.page__footer-legal-identity-text b {
+    color: var(--text-dark, #333333);
+}
+
+.page__footer-legal-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.5rem;
+    list-style: none;
+}
+
+.page__footer-legal-list-item {
+    position: relative;
+}
+
+.page__footer-legal-list-item-href {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--text-dark, #333333);
+    transition: color var(--transition, .25s ease-in-out);
+}
+
+.page__footer-legal-list-item-href::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.375rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--cream-accent, #DED0B6);
+    transition: width var(--transition, .25s ease-in-out);
+}
+
+.page__footer-legal-list-item-href:hover {
+    color: #3333339b;
+}
+
+.page__footer-legal-list-item-href:hover::after {
+    width: 100%;
+}
