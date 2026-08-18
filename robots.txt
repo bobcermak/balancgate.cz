@@ -1,4 +1,9 @@
+# BalancGate - masáže Jablonec nad Nisou
+# Strojově čitelný souhrn webu: https://balancgate.cz/llms.txt
+# Kompletní obsah v Markdownu: https://balancgate.cz/llms-full.txt
+
 User-agent: *
 Allow: /
+Disallow: /404.html
 
 Sitemap: https://balancgate.cz/sitemap.xml

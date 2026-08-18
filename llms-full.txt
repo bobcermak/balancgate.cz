@@ -1,0 +1,292 @@
+# BalancGate - kompletní obsah webu
+
+> Masážní studio v Jablonci nad Nisou. Tento soubor obsahuje texty ze všech veřejných stránek webu balancgate.cz v Markdownu, aby si je jazykové modely nemusely skládat z HTML.
+>
+> Poslední aktualizace: 18. 8. 2026. Zdrojové stránky jsou uvedeny u každé sekce a mají vždy přednost před tímto souhrnem.
+
+---
+
+## Identifikace provozovatele
+
+- **Značka:** BalancGate
+- **Slogan:** Vaše brána k životní rovnováze
+- **Provozovatel:** Kristýna Čermáková, fyzická osoba podnikající dle živnostenského zákona
+- **IČO:** 21012504
+- **Zápis:** živnostenský rejstřík, od 11. 12. 2023; vázaná živnost „Masérské, rekondiční a regenerační služby“
+- **DPH:** neplátce
+- **Sídlo:** Pod Skalkou 199, Liberec XXX-Vratislavice nad Nisou, 463 11 Liberec
+- **Provozovna:** Dolní nám. 584/2, 466 01 Jablonec nad Nisou 1
+- **GPS provozovny:** 50.723261, 15.168387
+- **Telefon:** +420 604 338 393
+- **E-mail:** balancgate@gmail.com
+- **Web:** https://balancgate.cz/
+- **Rezervační systém:** https://www.onlinetermin.cz/customer?ownerId=586&orderBy=SERVICE
+- **Facebook:** https://www.facebook.com/kristyna.cermakova.505
+- **Instagram:** https://www.instagram.com/balancgate.massage/
+
+---
+
+## Domovská stránka
+
+Zdroj: https://balancgate.cz/
+
+**Titulek:** BalancGate | Vaše brána k životní rovnováze
+
+### Úvod
+
+BalancGate - vaše brána k životní rovnováze.
+
+Masáže a terapie, které vám pomohou znovu najít vnitřní klid. „Vaše brána k životní rovnováze“ - to je víc než jen slogan, je to náš přístup k péči o vás.
+
+### Výhody masážní terapie
+
+*Úleva, kterou si vaše tělo zaslouží.*
+
+Trápí vás ztuhlá záda, únava nebo napětí ze stresu? Masážní terapie je jemná cesta, jak tělu i mysli dopřát úlevu. Uvolní svaly, zlepší cirkulaci a přinese vám zasloužený klid - přesně tam, kde ho nejvíc potřebujete.
+
+Masáž pomáhá nejen od bolesti, ale i od napětí způsobeného stresem, přetížením nebo sedavým způsobem života. Je to chvíle, kdy se zastavíte, nadechnete a dopřejete si péči, která léčí zevnitř i navenek.
+
+- Úleva od bolesti zad
+- Zmírňuje stres a napětí
+- Podpora metabolismu
+
+Studio uvádí, že jeho službami prošlo 80+ klientů.
+
+### Služby
+
+*Cesta k uvolnění začíná tady.*
+
+**Hloubková masáž** - Hloubková masáž uvolňuje napětí v hlubších svalových vrstvách a pomáhá při bolestech zad nebo ztuhlosti. Skvěle podpoří regeneraci a uleví po fyzické nebo psychické zátěži. Detail: https://balancgate.cz/hloubkova-masaz.html
+
+**Havajská masáž** - Hluboce relaxační masáž s rytmickými tahy předloktím uvolňuje napětí ve svalech, pomáhá při bolestech zad a podporuje regeneraci těla i mysli. Detail: https://balancgate.cz/havajska-masaz.html
+
+**Masáž břicha** - Jemná technika zaměřená na oblast břicha napomáhá trávení, uvolňuje vnitřní napětí a podporuje celkovou harmonii těla i psychiky.
+
+**Kineziotaping** - Pohodlí a efektivita kineziotapingu jsou pro nás klíčové. Každou aplikaci pásky přizpůsobíme vašim potřebám, abychom podpořili správnou funkci svalů a kloubů a zrychlili proces hojení.
+
+### Poselství studia
+
+BalancGate - relaxační masáže Jablonec nad Nisou, dotek, který léčí.
+
+Věnujeme se masážím už řadu let a naše praxe je opravdu široká - od klasické relaxace až po techniky zaměřené na konkrétní potíže. Masáže vnímáme jako způsob, jak lidem pomáhat nejen po fyzické stránce, ale i k celkové psychické pohodě.
+
+### Ceník
+
+*Začněte uvolnění podle svého tempa i rozpočtu.* Každé tělo si zaslouží péči. Prohlédněte si náš ceník a vyberte si masáž, která vám přinese uvolnění, klid a novou energii.
+
+| Služba | Cena | Délka |
+| --- | --- | --- |
+| Hloubková masáž | 600 Kč | 40 min |
+| Hloubková masáž | 1000 Kč | 60 min |
+| Hloubková masáž | 1300 Kč | 90 min |
+| Havajská masáž | 600 Kč | 40 min |
+| Masáž břicha | 300 Kč | 20 min |
+| Kineziotaping | 150 Kč | 10 min |
+
+Rezervace je možná přes rezervační systém - alespoň 24 hodin předem, akutní případy telefonicky. Platba je možná v hotovosti či přes QR kód. Máte dotaz? Napište nám přes kontaktní formulář - rádi odpovíme.
+
+### Dárkové poukazy
+
+*Potěšte své blízké relaxací.*
+
+Hledáte smysluplný dárek, který potěší tělo i duši? Naše dárkové poukazy jsou ideální volbou. Můžete je využít na libovolnou masáž z nabídky a věnovat tak svým blízkým chvíli opravdového odpočinku a péče.
+
+Nabízené hodnoty: **1000 Kč**, **1500 Kč**, **2000 Kč** a **na míru**. U každého platí: dopřejte sobě nebo svým blízkým chvíli klidu, péče a regenerace. Hodnota poukazu může být využita na jakoukoliv z nabízených masáží. Platnost: 12 měsíců od zakoupení.
+
+Dárkové poukazy si můžete objednat jednoduše - přes kontaktní formulář nebo telefonicky. Platba je možná v hotovosti.
+
+### Objednání dárkového poukazu krok za krokem
+
+Přemýšlíte o dárkovém poukazu? Je to snadné - stačí vám jen 3 kroky.
+
+1. **Napište** - Pošlete zprávu „Chci voucher!“ s částkou a datem vyzvednutí.
+2. **Potvrďte** - Po obdržení zprávy vám pošleme e-mail s potvrzením objednávky.
+3. **Vyzvedněte** - Přijďte si voucher vyzvednout na pobočku v domluvený termín.
+
+Dárkový poukaz je skvělý dárek! Stačí napsat přes kontaktní formulář a připravíme poukaz na míru, ať už osobně nebo e-mailem. Voucher vám klidně pošleme elektronicky. A pokud se hned nevyčerpá celý, zbytek využijete příště - o nic nepřijdete.
+
+### Kontakt
+
+*Vaše pohodlí začíná už prvním kontaktem.*
+
+Máte dotaz? Napište mi přes kontaktní formulář. Platba je možná v hotovosti či přes QR kód.
+
+- Adresa: Dolní nám. 584/2, 466 01 Jablonec nad Nisou 1
+- Telefon: +420 604 338 393
+- E-mail: balancgate@gmail.com
+
+Kontaktní formulář („Zeptat se nebo potěšit poukazem?“) sbírá jméno, příjmení, e-mail a zprávu.
+
+---
+
+## O nás
+
+Zdroj: https://balancgate.cz/o-nas.html
+
+**Titulek:** O nás | BalancGate
+
+BalancGate - o nás. Masáž jako cesta k rovnováze - dotek plný péče, klidu a pozornosti. Důvěra, bezpečí a individuální přístup jsou naším základem.
+
+### Vzdělání
+
+*Vzdělání a praxe, které stojí za dotekem.*
+
+Za každou masáží stojí znalosti, praxe a neustálé učení. Věříme, že kvalitní péče začíná u dobrého základu.
+
+Péče, kterou poskytujeme, vychází ze studia ověřených technik, profesionálních kurzů a dlouhodobé praxe s klienty. Každá masáž je postavená na pevných základech znalostí, ale také na citu, vnímavosti a schopnosti přizpůsobit se vašim aktuálním potřebám. Věříme, že právě propojení odbornosti a lidského přístupu tvoří základ skutečně kvalitní a smysluplné masáže.
+
+- Certifikace v masérských a terapeutických technikách
+- Kurzy specializovaných metod
+- Neustálé vzdělávání a rozšiřování praxe
+
+### Naše dovednosti
+
+*Dovednosti, které přinášejí úlevu a rovnováhu.*
+
+Za každým dotekem stojí znalosti, zkušenosti i hluboké porozumění tělu. Každou techniku volíme s citem, abychom vám pomohli najít uvolnění, rovnováhu a novou energii.
+
+- 5+ let zkušeností
+- 50+ spokojených zákazníků
+- 12+ masážních technik
+- 4+ různých typů masáží
+
+---
+
+## Hloubková masáž
+
+Zdroj: https://balancgate.cz/hloubkova-masaz.html
+
+**Titulek:** Hloubková masáž | BalancGate
+
+Hloubková masáž BalancGate uvolňuje napětí ve svalech a fasciích, podporuje regeneraci, zlepšuje pohyblivost a držení těla. Provádí se cíleně - zaměření oblasti si zvolíte společně s masérem podle aktuálních potřeb.
+
+Varianty: záda a krk, horní a dolní končetiny, celková.
+
+### Záda a krk - 600 Kč / 40 min
+
+*Uvolnění napětí a zlepšení držení těla.*
+
+Úleva pro záda a krk - hloubková masáž uvolňuje napětí, mírní bolest a podporuje správné držení těla. Ideální při stresu a sedavém životním stylu.
+
+Naše hloubková masáž cílí na nejvíce přetěžované partie - záda a krk. Pomáhá uvolnit ztuhlé svaly, zmírnit bolest a zlepšit prokrvení i pohyblivost. Díky kombinaci sportovní masáže, Breussovy techniky a reflexních prvků ulevuje od napětí ze stresu, dlouhého sezení i jednostranné zátěže. Výsledkem je volnější pohyb, lepší držení těla a úleva pro mysl i tělo.
+
+- Úleva pro zatížená záda a šíji
+- Hloubkové uvolnění svalstva
+- Zlepšení držení těla i pohyblivosti
+
+### Dolní a horní končetiny - 600 Kč / 40 min
+
+*Dolní a horní končetiny v rovnováze.*
+
+Regenerace od ramen po chodidla - hloubková masáž uvolňuje unavené a přetížené končetiny. Pomáhá při zatuhlosti z práce, sportu i dlouhého stání a vrací lehkost pohybu.
+
+Masáž uvolňuje svaly paží, nohou, ramen a stehen. Pomáhá zmírnit bolest, zlepšit pohyblivost a prokrvení. Ideální pro osoby s fyzickou zátěží nebo pro ty, kdo tráví čas seděním nebo stáním. Uvolní napětí a zlepší flexibilitu pro každodenní pohyb i sportovní regeneraci.
+
+- Pocit lehkosti v pažích a nohou po dlouhém dni
+- Uvolnění ztuhlých svalů a návrat k přirozenému pohybu
+- Rychlá regenerace pro sportovce i kancelářské pracovníky
+
+### Celková masáž - 1000 Kč / 60 min a 1300 Kč / 90 min
+
+*Celková regenerace partií.*
+
+Komplexní hloubková terapie pro uvolnění celého těla se zaměřením na klíčové uzlové body napětí. Ideální pro celkovou regeneraci svalů, odbourání únavy a hloubkový relax.
+
+Reflexologie je důležitou součástí této masáže. Pracuje s reflexními body na těle, které jsou spojeny s různými částmi organismu. Tímto způsobem se podporuje léčba celého těla a harmonizace jeho funkcí. Každá hloubková masáž je individuálně přizpůsobena potřebám a preferencím klienta. Díky naslouchání a aktivní komunikaci s klientem jsme schopni poskytnout nejefektivnější a nejpohodlnější terapeutický zážitek.
+
+- Uvolnění celého pohybového aparátu
+- Harmonizace těla i psychické uvolnění
+- Intenzivní regenerace a příliv energie
+
+---
+
+## Havajská masáž
+
+Zdroj: https://balancgate.cz/havajska-masaz.html
+
+**Titulek:** Havajská masáž | BalancGate
+
+Havajská masáž v BalancGate využívá plynulých, rytmických tahů dlaněmi i předloktím. Tato „laskavá masáž“ odstraňuje únavu, uvolňuje svalové napětí a harmonizuje celé tělo i mysl.
+
+Varianty: záda a krk, nohy.
+
+### Záda a krk - 600 Kč / 40 min
+
+*Hluboká relaxace a harmonizace organismu.*
+
+Uvolnění zad a šíje - havajská masáž plynulými pohyby odstraňuje ztuhlost, mírní napětí a navozuje pocit lehkosti. Ideální pro celkové zklidnění a regeneraci.
+
+Havajská masáž Lomi Lomi se zaměřuje na hloubkovou relaxaci v oblasti zad a krku. Pomocí plynulých tahů předloktím uvolňuje nahromaděné napětí, zlepšuje cirkulaci a navrací tělu přirozenou rovnováhu. Díky rytmickému střídání jemných i intenzivnějších hmatů ulevuje od stresu, únavy i pocitu ztuhlosti. Tato technika působí nejen na svaly, ale i na psychiku, čímž přináší pocit naprosté pohody a vnitřního klidu.
+
+- Hluboká relaxace pro záda a šíji
+- Rytmické uvolnění svalového napětí
+- Harmonizace těla i mysli
+
+### Nohy - 600 Kč / 40 min
+
+*Lehkost a vitalita pro vaše nohy.*
+
+Regenerace od kyčlí po konečky prstů - havajská masáž uvolňuje unavené svaly a stimuluje proudění energie v dolních končetinách. Navrací pocit lehkosti, mírní napětí a harmonizuje celé tělo.
+
+Masáž dolních končetin rytmickými tahy Lomi Lomi přináší okamžitou úlevu od pocitu těžkých nohou. Pomáhá uvolnit unavené svaly, zlepšit prokrvení a podpořit regeneraci po sportu i celodenním stání. Díky plynulému tlaku dlaní i předloktí dochází k hloubkovému uvolnění, které působí blahodárně na unavené svaly i klouby. Výsledkem je pocit lehkosti a nová energie pro každý váš krok.
+
+- Okamžitý pocit lehkosti v nohou
+- Uvolnění svalového napětí rytmickými tahy
+- Podpora lymfy a rychlejší regenerace
+
+---
+
+## Obchodní podmínky (souhrn)
+
+Zdroj a závazné znění: https://balancgate.cz/obchodni-podminky.html - účinné od 18. 8. 2026
+
+- **Poskytovatel:** Kristýna Čermáková, IČO 21012504, neplátce DPH; vázaná živnost „Masérské, rekondiční a regenerační služby“.
+- **Rezervace:** online v rezervačním systému (ideálně 24 h předem), telefonicky (i akutní případy) nebo přes kontaktní formulář. Smlouva vzniká potvrzením rezervace.
+- **Ceny a platba:** dle ceníku na webu, ceny konečné bez DPH (neplátce). Platí se po masáži na provozovně hotově nebo QR kódem; platební karty se nepřijímají. Závazná je cena platná v okamžiku potvrzení rezervace.
+- **Zrušení termínu:** kdykoli a zdarma, bez storno poplatků a záloh; žádoucí je zrušit co nejdříve, ideálně 24 h předem. Při opakované neomluvené neúčasti může poskytovatel přijímat další rezervace jen telefonicky po domluvě. Poskytovatel může termín zrušit ze zdravotních či provozních důvodů a nabídne náhradní termín nebo vrátí uhrazenou částku.
+- **Povaha služby:** masáže jsou rekondiční a regenerační službou, nejsou zdravotní službou a nenahrazují lékařskou péči, diagnostiku ani léčbu.
+- **Zdravotní stav:** klient musí před masáží pravdivě informovat o zdravotním stavu (úrazy, operace, onemocnění, těhotenství, alergie, bolestivá místa).
+- **Odmítnutí masáže:** při horečce, akutním infekčním nebo kožním onemocnění, čerstvém poranění, akutním zánětu, trombóze, u závažných onemocnění bez souhlasu lékaře, pod vlivem návykových látek, při zamlčení podstatných informací nebo při nevhodném chování. Těhotenství vyžaduje předchozí konzultaci. Osoby mladší 18 let potřebují souhlas zákonného zástupce, mladší 15 let jeho přítomnost.
+- **Pozdní příchod:** masáž se zkrátí o odpovídající dobu, cena zůstává stejná; zpoždění nad 20 minut se považuje za neúčast.
+- **Dárkové poukazy:** hodnoty 1000, 1500, 2000 Kč nebo na míru; platba v hotovosti při převzetí; předání osobně nebo e-mailem; platnost 12 měsíců od zakoupení; uplatnitelné na jakoukoli službu; nevyčerpaný zbytek lze využít při další návštěvě v době platnosti; rozdíl nad hodnotu poukazu se doplácí; poukaz nelze směnit za peníze; je přenosný a za jeho ztrátu poskytovatel neodpovídá.
+- **Odstoupení od smlouvy:** u služeb využití volného času poskytovaných v určeném termínu právo na odstoupení do 14 dnů nevzniká (§ 1837 písm. j) občanského zákoníku); zrušení termínu je však vždy zdarma. U dárkového poukazu koupeného na dálku lze odstoupit do 14 dnů, nebyl-li uplatněn.
+- **Reklamace:** ideálně ihned na místě, jinak bez zbytečného odkladu e-mailem nebo telefonicky; vyřízení do 30 dnů. Při oprávněné reklamaci přiměřená sleva nebo bezplatné opakování služby.
+- **Mimosoudní řešení sporů:** Česká obchodní inspekce, oddělení ADR, Gorazdova 1969/24, 120 00 Praha 2, https://adr.coi.cz - pro spotřebitele bezplatné, lze zahájit do 1 roku od prvního uplatnění práva u poskytovatele.
+- **Rozhodné právo:** právní řád ČR, zejména zákon č. 89/2012 Sb. (občanský zákoník) a zákon č. 634/1992 Sb. (o ochraně spotřebitele).
+
+---
+
+## Zásady ochrany osobních údajů (souhrn)
+
+Zdroj a závazné znění: https://balancgate.cz/zasady-ochrany-osobnich-udaju.html - účinné od 18. 8. 2026
+
+- **Správce:** Kristýna Čermáková, IČO 21012504, sídlo Pod Skalkou 199, Liberec XXX-Vratislavice nad Nisou, 463 11 Liberec. Pověřenec pro ochranu osobních údajů není jmenován.
+- **Účely a právní základy:** odpověď na dotaz z formuláře (oprávněný zájem / jednání o smlouvě, do 6 měsíců od poslední komunikace); rezervace a poskytnutí masáže (plnění smlouvy, 3 roky po skončení spolupráce); dárkové poukazy (plnění smlouvy, po dobu platnosti a 3 roky poté); daňová evidence (právní povinnost, po zákonem stanovenou dobu); ochrana právních nároků (oprávněný zájem, po dobu promlčecí lhůty).
+- **Zdravotní údaje:** zvláštní kategorie údajů podle čl. 9 GDPR; sdělují se ústně na provozovně, zpracovávají se jen v rámci konkrétní návštěvy na základě výslovného souhlasu a nevede se o nich žádná evidence.
+- **Příjemci:** OnlineTermin.cz (rezervační systém), Formspark / submit-form.com (kontaktní formulář), Google (e-mail, mapa, písma), poskytovatel webhostingu.
+- **Předávání mimo EU:** možné u uvedených poskytovatelů, na základě rozhodnutí o odpovídající ochraně (EU-US Data Privacy Framework) nebo standardních smluvních doložek.
+- **Práva subjektu údajů:** přístup, oprava, výmaz, omezení zpracování, přenositelnost, námitka, odvolání souhlasu, stížnost u Úřadu pro ochranu osobních údajů (Pplk. Sochora 27, 170 00 Praha 7, https://www.uoou.gov.cz). Žádosti se vyřizují nejpozději do jednoho měsíce.
+- **Zabezpečení:** HTTPS, silná hesla a dvoufázové ověření, přístup pouze provozovatelky, papírové doklady uzamčené na provozovně.
+- **Profilování:** neprobíhá; nedochází ani k automatizovanému rozhodování s právními účinky.
+
+---
+
+## Cookies (souhrn)
+
+Zdroj a závazné znění: https://balancgate.cz/cookies.html - účinné od 18. 8. 2026
+
+- Web **neukládá žádné vlastní cookies** ani jiná data do prohlížeče návštěvníka.
+- Neběží zde Google Analytics, Meta Pixel, Sklik ani jiné měřicí či reklamní skripty; návštěvníci se neprofilují.
+- **Obsah třetích stran:** vložená mapa Google (ukládá vlastní cookies, načítá se odloženě až u patičky), Google Fonts (bez cookies, přenáší IP a údaje o prohlížeči), Formspark (až při odeslání formuláře), OnlineTermin.cz (běžný odkaz, až po kliknutí).
+- Odkazy na Facebook a Instagram jsou běžné odkazy, nikoli vložené widgety.
+- **Cookie lišta se nezobrazuje**, protože web neukládá nic, k čemu by byl podle § 89 odst. 3 zákona č. 127/2005 Sb. potřeba souhlas. Mapu lze potlačit zablokováním cookies třetích stran v prohlížeči; zbytek webu funguje beze změny.
+
+---
+
+## Poznámky pro strojové zpracování
+
+- Web je statický, v češtině, bez uživatelských účtů, přihlašování a nákupního košíku.
+- Otevírací doba není na webu uvedena; dostupné termíny zobrazuje rezervační systém OnlineTermin.cz.
+- Web neobsahuje zákaznické recenze ani hodnocení - žádné takové údaje z něj nelze citovat.
+- Uváděná čísla (80+ klientů, 5+ let zkušeností, 50+ spokojených zákazníků, 12+ masážních technik, 4+ typů masáží) jsou marketingová tvrzení provozovatele.
+- Strukturovaná data ve formátu JSON-LD (schema.org) jsou vložena přímo v HTML každé stránky.
